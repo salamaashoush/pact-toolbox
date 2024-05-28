@@ -1,0 +1,29 @@
+{
+  "name": "@pact-toolbox/binding-wasm32-wasi",
+  "version": "0.0.0",
+  "cpu": [
+    "wasm32"
+  ],
+  "main": "pact-toolbox.wasi.cjs",
+  "files": [
+    "pact-toolbox.wasm32-wasi.wasm",
+    "pact-toolbox.wasi.cjs",
+    "pact-toolbox.wasi-browser.js",
+    "wasi-worker.mjs",
+    "wasi-worker-browser.mjs"
+  ],
+  "homepage": "https://github.com/kadena-community/pact-toolbox",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "kadena-community/pact-toolbox",
+  "bugs": "https://github.com/kadena-community/pact-toolbox/issues",
+  "browser": "pact-toolbox.wasi-browser.js",
+  "dependencies": {
+    "@napi-rs/wasm-runtime": "^0.2.4"
+  }
+}

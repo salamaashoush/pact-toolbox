@@ -1,4 +1,4 @@
-name: ci
+name: Pnpm ci
 on:
   push:
     branches:

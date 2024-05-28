@@ -2,3 +2,7 @@ packages:
   - 'packages/*'
   - 'apps/*'
   - 'examples/*'
+  - 'tooling/*'
+  - 'crates/node_binding'
+  - 'crates/node_binding/npm/*'
+

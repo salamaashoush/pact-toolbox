@@ -1,0 +1,4 @@
+{
+  "extends": "@pact-toolbox/tsconfig/base",
+  "exclude": ["tests", "scripts"]
+}

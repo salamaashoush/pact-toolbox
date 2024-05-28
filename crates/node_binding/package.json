@@ -1,0 +1,63 @@
+{
+  "name": "@pact-toolbox/binding",
+  "homepage": "https://github.com/kadena-community/pact-toolbox",
+  "bugs": "https://github.com/kadena-community/pact-toolbox/issues",
+  "repository": "kadena-community/pact-toolbox",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "napi": {
+    "binaryName": "pact-toolbox",
+    "targets": [
+      "x86_64-pc-windows-msvc",
+      "aarch64-pc-windows-msvc",
+      "x86_64-unknown-linux-gnu",
+      "aarch64-unknown-linux-gnu",
+      "x86_64-unknown-linux-musl",
+      "aarch64-unknown-linux-musl",
+      "x86_64-apple-darwin",
+      "aarch64-apple-darwin",
+      "wasm32-wasi-preview1-threads"
+    ]
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "browser": "browser.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "artifacts": "npx napi artifacts",
+    "build": "npx napi build --platform --release --no-const-enum",
+    "dev": "cargo watch --quiet --shell 'npm run build'",
+    "build:debug": "npx napi build --platform --no-const-enum",
+    "version": "npx napi version"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^3.0.0-alpha.55",
+    "@napi-rs/wasm-runtime": "^0.2.4",
+    "@pact-toolbox/tsconfig": "workspace:*",
+    "@types/node": "^20.12.12",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "optionalDependencies": {
+    "@pact-toolbox/binding-android-arm64": "workspace:*",
+    "@pact-toolbox/binding-darwin-arm64": "workspace:*",
+    "@pact-toolbox/binding-darwin-x64": "workspace:*",
+    "@pact-toolbox/binding-linux-arm64-gnu": "workspace:*",
+    "@pact-toolbox/binding-linux-x64-gnu": "workspace:*",
+    "@pact-toolbox/binding-win32-arm64-msvc": "workspace:*",
+    "@pact-toolbox/binding-win32-x64-msvc": "workspace:*"
+  }
+}

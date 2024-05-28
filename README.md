@@ -19,7 +19,7 @@ npx pact-toolbox init
 ### Step 3: Update `vite.config.ts`
 
 ```typescript
-// NOTE: don't ovveride the existing file, just update the necessary parts.
+// NOTE: don't override the existing file, just update the necessary parts.
 // import pact vite plugin
 import pactVitePlugin from '@pact-toolbox/unplugin/vite';
 

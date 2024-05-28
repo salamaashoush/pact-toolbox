@@ -1,4 +1,4 @@
-name: Changesets
+name: Npm release
 on:
   push:
     branches:

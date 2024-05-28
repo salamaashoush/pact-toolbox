@@ -1,0 +1,29 @@
+[package]
+edition    = "2021"
+license    = "MIT"
+name       = "pact_toolbox_node"
+publish    = false
+repository = "https://github.com/kadena-community/pact-toolbox"
+version    = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow             = { workspace = true, features = ["backtrace"] }
+chrono             = { workspace = true, features = ["serde"] }
+serde              = { workspace = true, features = ["derive"] }
+serde_json         = { workspace = true }
+tokio              = { workspace = true }
+tracing            = { workspace = true }
+tracing-subscriber = { workspace = true }
+reqwest            = { workspace = true }
+url                = { workspace = true }
+napi-derive        = { workspace = true, features = ["type-def"] }
+napi               = { workspace = true, features = ["napi8"] }
+napi-build         = { workspace = true }
+color-backtrace    = { workspace = true }
+
+
+[build-dependencies]
+napi-build = { workspace = true }

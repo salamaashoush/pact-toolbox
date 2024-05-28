@@ -11,26 +11,26 @@
     "verify": "tsc --noEmit"
   },
   "dependencies": {
-    "@kadena/client": "^1.11.0",
+    "@kadena/client": "^1.11.1",
     "@pact-toolbox/client-utils": "workspace:*",
     "@pact-toolbox/wallet": "workspace:*",
-    "@tanstack/react-query": "^5.32.0",
+    "@tanstack/react-query": "^5.40.0",
     "react": "^18.3.1"
   },
   "devDependencies": {
     "@pact-toolbox/test": "workspace:*",
     "@pact-toolbox/unplugin": "workspace:*",
     "@pact-toolbox/wallet": "workspace:*",
-    "@testing-library/react": "~15.0.5",
+    "@testing-library/react": "~15.0.7",
     "@testing-library/user-event": "~14.5.2",
-    "@types/react": "^18.3.1",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.6.0",
-    "happy-dom": "^14.7.1",
-    "oxlint": "^0.3.1",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "happy-dom": "^14.11.2",
+    "oxlint": "^0.4.2",
     "pact-toolbox": "workspace:*",
     "typescript": "^5.4.5",
-    "vitest": "^1.5.2",
+    "vitest": "^1.6.0",
     "vitest-dom": "^0.1.1"
   }
 }

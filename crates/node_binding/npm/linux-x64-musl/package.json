@@ -1,0 +1,27 @@
+{
+  "name": "@pact-toolbox/binding-linux-x64-musl",
+  "version": "0.0.0",
+  "cpu": [
+    "x64"
+  ],
+  "main": "pact-toolbox.linux-x64-musl.node",
+  "files": [
+    "pact-toolbox.linux-x64-musl.node"
+  ],
+  "homepage": "https://github.com/kadena-community/pact-toolbox",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "kadena-community/pact-toolbox",
+  "bugs": "https://github.com/kadena-community/pact-toolbox/issues",
+  "os": [
+    "linux"
+  ],
+  "libc": [
+    "musl"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@pact-toolbox/binding-darwin-arm64",
+  "version": "0.0.0",
+  "cpu": [
+    "arm64"
+  ],
+  "main": "pact-toolbox.darwin-arm64.node",
+  "files": [
+    "pact-toolbox.darwin-arm64.node"
+  ],
+  "homepage": "https://github.com/kadena-community/pact-toolbox",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "kadena-community/pact-toolbox",
+  "bugs": "https://github.com/kadena-community/pact-toolbox/issues",
+  "os": [
+    "darwin"
+  ]
+}

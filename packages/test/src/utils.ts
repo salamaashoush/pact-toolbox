@@ -8,7 +8,7 @@ import {
 } from '@pact-toolbox/config';
 import { getRandomNetworkPorts } from '@pact-toolbox/utils';
 
-export function disablePersistance(network: NetworkConfig) {
+export function disablePersistence(network: NetworkConfig) {
   if (isPactServerNetworkConfig(network) && network.serverConfig?.persistDir) {
     network.serverConfig.persistDir = undefined;
   }

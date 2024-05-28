@@ -1,0 +1,22 @@
+{
+  "name": "@pact-toolbox/tsconfig",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadena-community/pact-toolbox.git"
+  },
+  "homepage": "https://github.com/kadena-community/pact-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/kadena-community/pact-toolbox/issues"
+  },
+  "author": "Salama Ashoush <salamaashoush@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "base.json",
+    "web.json"
+  ]
+}

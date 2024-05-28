@@ -1,0 +1,24 @@
+{
+  "name": "@pact-toolbox/binding-win32-x64-msvc",
+  "version": "0.0.0",
+  "cpu": [
+    "x64"
+  ],
+  "main": "pact-toolbox.win32-x64-msvc.node",
+  "files": [
+    "pact-toolbox.win32-x64-msvc.node"
+  ],
+  "homepage": "https://github.com/kadena-community/pact-toolbox",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "kadena-community/pact-toolbox",
+  "bugs": "https://github.com/kadena-community/pact-toolbox/issues",
+  "os": [
+    "win32"
+  ]
+}

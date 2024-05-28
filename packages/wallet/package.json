@@ -41,18 +41,18 @@
     "verify": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
-    "@kadena/client": "^1.11.0",
-    "@kadena/cryptography-utils": "^0.4.2",
+    "@kadena/client": "^1.11.1",
+    "@kadena/cryptography-utils": "^0.4.3",
     "@pact-toolbox/client-utils": "workspace:*"
   },
   "devDependencies": {
-    "@kadena/types": "^0.6.1",
+    "@kadena/types": "^0.6.2",
     "@pact-toolbox/tsconfig": "workspace:*",
-    "@vitest/coverage-v8": "^1.5.2",
-    "lint-staged": "^15.2.2",
-    "oxlint": "^0.3.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "lint-staged": "^15.2.5",
+    "oxlint": "^0.4.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
-    "vitest": "^1.5.2"
+    "vitest": "^1.6.0"
   }
 }

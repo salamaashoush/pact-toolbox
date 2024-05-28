@@ -163,7 +163,7 @@ export interface PactServerConfig {
    */
   logDir?: string;
   /**
-   * Directory for database files. If ommitted, runs in-memory only.
+   * Directory for database files. If omitted, runs in-memory only.
    */
   persistDir?: string;
   /**

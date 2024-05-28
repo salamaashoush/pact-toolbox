@@ -1,0 +1,61 @@
+[workspace]
+members  = ["crates/*"]
+resolver = "2" # See https://doc.rust-lang.org/cargo/reference/resolver.html#feature-resolver-version-2
+
+[workspace.dependencies]
+anyhow = { version = "1.0", features = ["backtrace"] }
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+tokio = { version = "1.37" }
+tracing = { version = "0.1" }
+tracing-subscriber = { version = "0.3" }
+reqwest = { version = "0.12", features = [
+  "blocking",
+  "brotli",
+  "json",
+  "rustls-tls",
+  "rustls-tls-native-roots",
+], default-features = false }
+url = "2.4.0"
+napi-derive = { version = "2", features = ["type-def"] }
+napi = { version = "2", default-features = false, features = ["napi8"] }
+napi-build = "2"
+clap = "4.3"
+clap_complete = "4.3"
+color-backtrace = "0.6"
+colored = "2.0"
+dirs = "5.0"
+encoding_rs_io = "0.1"
+env_logger = "0.11"
+indoc = "2.0"
+log = "0.4"
+node-semver = "2.1"
+sysinfo = "0.30"
+tar = "0.4"
+tempfile = "3.6"
+thiserror = "1.0"
+xz2 = "0.1"
+zip = "2.0"
+duct = "0.13"
+embed-resource = "2.4"
+pretty_assertions = "1.4"
+test-log = "0.2"
+flate2 = "1.0"
+octocrab = "0.38"
+walkdir = "2"
+
+
+[profile.dev]
+codegen-units = 16 # debug build will cause runtime panic if codegen-unints is default
+debug         = 2
+incremental   = true
+panic         = "abort"
+
+[profile.release]
+codegen-units = 1
+debug         = false
+lto           = "thin" # Performs “thin” LTO. This is similar to “fat”, but takes substantially less time to run while still achieving performance gains similar to “fat”.
+opt-level     = 3
+panic         = "abort"
+strip         = true
